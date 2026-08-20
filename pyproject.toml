@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supplier-ranking-system"
+version = "0.1.0"
+description = "Supplier ranking system: point-in-time feature engineering, composite scoring, learning-to-rank, and sub-model forecasting."
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scikit-learn>=1.3",
+    "scipy>=1.10",
+    "xgboost>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
